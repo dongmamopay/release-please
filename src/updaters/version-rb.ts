@@ -33,6 +33,7 @@ export class VersionRB implements Update {
   }
 
   updateContent(content: string): string {
+    console.log(`content is ${content}`);
     return content.replace(
       /"[0-9]+\.[0-9]+\.[0-9](-\w+)?"/,
       `"${this.version}"`
